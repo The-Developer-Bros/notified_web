@@ -4,12 +4,12 @@ import "./SocialMediaSideBar.css"
 function SocialMediaSideBar() {
     return (
         <div>
-            <div class="icon-bar">
-                <a href="/#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="/#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="/#" class="google"><i class="fa fa-google"></i></a>
-                <a href="/#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="/#" class="youtube"><i class="fa fa-youtube"></i></a>
+            <div className="icon-bar">
+                <a href="/#" className="facebook"><i className="fa fa-facebook"></i></a>
+                <a href="/#" className="twitter"><i className="fa fa-twitter"></i></a>
+                <a href="/#" className="google"><i className="fa fa-google"></i></a>
+                <a href="/#" className="linkedin"><i className="fa fa-linkedin"></i></a>
+                <a href="/#" className="youtube"><i className="fa fa-youtube"></i></a>
             </div>
 
         </div>

@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-body {
+/* .body {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -25,4 +25,8 @@ body {
   background: -ms-linear-gradient(to left top, blue, red);
   background: -o-linear-gradient(to left top, blue, red);
   background: linear-gradient(to left top, blue, red);
+} */
+
+body {
+  background: linear-gradient(to left top, blue, red) fixed;
 }
