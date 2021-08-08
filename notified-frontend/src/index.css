@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-html {
+body {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;

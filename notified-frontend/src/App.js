@@ -1,6 +1,13 @@
 import './App.css';
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar";
 import SocialMediaSideBar from './components/SocialMediaSideBar';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Blogs from "./pages/Blogs";
+import Events from "./pages/Events";
+import Signup from "./pages/Signup";
+import Signin from "./pages/Signin";
+import Signout from "./pages/Signout";
 
 import React from "react";
 import {
@@ -19,33 +26,35 @@ function App() {
         <SocialMediaSideBar />
 
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
           </Route>
 
-          <Route path="/blogs">
+          <Route exact path="/blogs">
             <Blogs />
           </Route>
 
-          <Route path="/events">
+          <Route exact path="/events">
             <Events />
           </Route>
 
-          <Route path="/signup">
+          <Route exact path="/signup">
             <Signup />
           </Route>
 
-          <Route path="/signin">
+          <Route exact path="/signin">
             <Signin />
           </Route>
 
-          <Route path="/signout">
+          <Route exact path="/signout">
             <Signout />
           </Route>
 
         </Switch>
-
 
       </Router>
     </div>
