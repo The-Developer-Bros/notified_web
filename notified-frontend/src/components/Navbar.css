@@ -1,10 +1,17 @@
 nav {
+  position: absolute;
+  margin: 5px;
+  width: auto;
+  /* overflow: hidden; */
 
-  background: linear-gradient(to right bottom, red, blue) ;
-  /* background-color: rgba(0, 0, 0, 0); */
-  border-bottom-left-radius: 25px solid black;
-  border-bottom-right-radius: 25px solid black;
-  padding: 20px;
+  background: linear-gradient(to right bottom, red, blue);
+  /* background: rgba(238, 25, 25, 0.768); */
+
+  border-radius: 25px;
+
+  /* border-bottom-left-radius: 25px solid black;
+  border-bottom-right-radius: 25px solid black; */
+  /* padding: 20px; */
 
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -12,4 +19,8 @@ nav {
 
 nav.transparent {
   background: linear-gradient(to left top, blue, red) fixed;
+}
+
+#navbar-logo {
+  border-radius: 50%;
 }

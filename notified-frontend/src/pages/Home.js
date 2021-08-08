@@ -17,21 +17,21 @@ function Home() {
                     <div className="carousel-item active" data-bs-interval="10000">
                         <img src={carousel1} className="d-block w-100"  height="1100px" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
+                            <h1>First slide label</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
                         <img src={carousel2} className="d-block w-100"  height="1100px" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
+                            <h1>Second slide label</h1>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={carousel3} className="d-block w-100"  height="1100px" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
+                            <h1>Third slide label</h1>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>

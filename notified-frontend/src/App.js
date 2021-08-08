@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <SocialMediaSideBar />
 
         <Switch>
@@ -56,7 +55,9 @@ function App() {
 
         </Switch>
 
+      <Navbar />
       </Router>
+
     </div>
   );
 }
