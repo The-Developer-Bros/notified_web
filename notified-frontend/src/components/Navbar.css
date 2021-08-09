@@ -1,13 +1,15 @@
 nav {
-  position: absolute;
-  margin: 5px;
-  width: auto;
+  /* position: absolute;
+  margin: 50px;
+  width: auto; */
   /* overflow: hidden; */
 
-  background: linear-gradient(to right bottom, red, blue);
-  /* background: rgba(238, 25, 25, 0.768); */
+  /* background: linear-gradient(to right bottom, red, blue); */
+  /* background: rgba(0,0,0,0); */
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
 
-  border-radius: 25px;
+  /* border-radius: 25px; */
 
   /* border-bottom-left-radius: 25px solid black;
   border-bottom-right-radius: 25px solid black; */

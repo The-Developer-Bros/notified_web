@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from "./components/Navbar";
+import ButtonAppBar from "./components/ButtonAppBar";
 import SocialMediaSideBar from './components/SocialMediaSideBar';
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -55,9 +55,8 @@ function App() {
 
         </Switch>
 
-      <Navbar />
+        <ButtonAppBar />
       </Router>
-
     </div>
   );
 }

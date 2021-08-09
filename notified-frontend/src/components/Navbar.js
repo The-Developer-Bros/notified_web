@@ -24,16 +24,16 @@ function Navbar() {
                         <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" styles="--bs-scroll-height: 100px;">
 
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/#"> <h4>About Us</h4></a>
+                                <a className="nav-link active" aria-current="page" href="/about"> <h4>About Us</h4></a>
                             </li>
 
 
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/#"> <h4>Blogs</h4></a>
+                                <a className="nav-link active" aria-current="page" href="/blogs"> <h4>Blogs</h4></a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/#"> <h4>Events</h4></a>
+                                <a className="nav-link active" aria-current="page" href="/events"> <h4>Events</h4></a>
                             </li>
 
                             {/* <li className="nav-item">
