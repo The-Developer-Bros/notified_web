@@ -47,16 +47,22 @@ function ButtonAppBar() {
 
     let location = useLocation();
 
-    
+
     useEffect(() => {
-        
+
         const handleScroll = () => {
-            
-            let show = window.scrollY > 890
-            
-            if (location.pathname === "/products") {
+
+            let show;
+
+            if (location.pathname === "/") {
+                show = window.scrollY > 900
+            } else if (location.pathname === "/about") {
+                show = window.scrollY > 10
+            } else  if (location.pathname === "/products") {
                 show = window.scrollY > 10
             }
+
+
 
 
 
