@@ -56,13 +56,9 @@ function ButtonAppBar() {
 
             if (location.pathname === "/") {
                 show = window.scrollY > 900
-            } else if (location.pathname === "/about") {
-                show = window.scrollY > 10
-            } else  if (location.pathname === "/products") {
+            } else {
                 show = window.scrollY > 10
             }
-
-
 
 
 
