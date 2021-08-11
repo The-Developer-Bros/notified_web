@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
 import Events from "./pages/Events";
 import Signup from "./pages/Signup";
@@ -34,7 +35,10 @@ function App() {
 
           <Route exact path="/about">
             <About />
+          </Route>
 
+          <Route exact path="/Products">
+            <Products />
           </Route>
 
           <Route exact path="/blogs">

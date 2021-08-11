@@ -10,6 +10,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import Sidebar from "./Sidebar";
 
+import { useLocation } from 'react-router-dom';
+
 const useStyles = makeStyles((theme) => ({
 
     root: {
@@ -42,10 +44,22 @@ function ButtonAppBar() {
     const navRef = React.useRef()
     navRef.current = navBackground;
 
-    useEffect(() => {
 
+    let location = useLocation();
+
+    
+    useEffect(() => {
+        
         const handleScroll = () => {
-            const show = window.scrollY > 890
+            
+            let show = window.scrollY > 890
+            
+            if (location.pathname === "/products") {
+                show = window.scrollY > 10
+            }
+
+
+
             if (show)
                 setNavBackground('appBarSolid');
             else
@@ -65,7 +79,7 @@ function ButtonAppBar() {
             <AppBar position="fixed" className={classes[navRef.current]}>
                 <Toolbar>
                     <Sidebar />
-                    
+
                     <Typography variant="h4" >
                         Notified
                     </Typography>
