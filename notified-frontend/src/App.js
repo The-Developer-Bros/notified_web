@@ -1,6 +1,8 @@
 import './App.css';
 import ButtonAppBar from "./components/ButtonAppBar";
 import SocialMediaSideBar from './components/SocialMediaSideBar';
+import Sidebar from "./components/Sidebar";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
@@ -23,6 +25,7 @@ function App() {
     <div className="App">
       <Router>
         <SocialMediaSideBar />
+        <ButtonAppBar />
 
         <Switch>
           <Route exact path="/">
@@ -31,6 +34,7 @@ function App() {
 
           <Route exact path="/about">
             <About />
+
           </Route>
 
           <Route exact path="/blogs">
@@ -55,7 +59,6 @@ function App() {
 
         </Switch>
 
-        <ButtonAppBar />
       </Router>
     </div>
   );
