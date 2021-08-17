@@ -7,10 +7,13 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import Grid from '@material-ui/core/Grid';
+
+
+import { useLocation } from 'react-router-dom';
 
 import Sidebar from "./Sidebar";
 
-import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -22,15 +25,21 @@ const useStyles = makeStyles((theme) => ({
         color: "black"
     },
     title: {
-        flexGrow: 1,
-        color: "black",
+        // flexGrow: 1,
+        color: "blue",
     },
     appBarTransparent: {
         backgroundColor: "rgba(0,0,0,0)"
     },
     appBarSolid: {
         background: "linear-gradient(to left top, blue, red) fixed"
+    },
+    shiftRight: {
+        flex: 1,
+        // marginRight: "250px",
+        // align: "right",
     }
+
 
 }));
 
@@ -60,8 +69,6 @@ function ButtonAppBar() {
                 show = window.scrollY > 10
             }
 
-
-
             if (show)
                 setNavBackground('appBarSolid');
             else
@@ -82,7 +89,7 @@ function ButtonAppBar() {
                 <Toolbar>
                     <Sidebar />
 
-                    <Typography variant="h4" >
+                    <Typography variant="h4" className={classes.title, classes.shiftRight}>
                         Notified
                     </Typography>
 
@@ -90,6 +97,28 @@ function ButtonAppBar() {
                         Login
                     </Button>
 
+
+
+                    <Grid
+                        justify="space-between" // Add it here :)
+                        container
+                        spacing={24}
+                    >
+                        <Grid item>
+                            <Typography type="title" color="inherit">
+                                Title
+                            </Typography>
+                        </Grid>
+
+                        <Grid item>
+                            <div>
+                                {/* <HeartIcon /> */}
+                                <Button raised color="accent">
+                                    Login
+                                </Button>
+                            </div>
+                        </Grid>
+                    </Grid>
                 </Toolbar>
 
             </AppBar>
