@@ -1,6 +1,6 @@
 // import React from 'react';
-// import "./Navbar.css"
-// import notes from "../resources/images/notes.jpg"
+// import notes from "../resources/images/notes.jpg";
+// import "./Navbar.css";
 
 // function Navbar() {
 //     return (

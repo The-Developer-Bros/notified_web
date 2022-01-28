@@ -1,13 +1,12 @@
+import { IconButton } from '@material-ui/core';
+import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
 import './Sidebar.css';
-import { IconContext } from 'react-icons';
+import { SidebarData } from './SidebarData';
 
-import MenuIcon from "@material-ui/icons/Menu";
-import { IconButton } from '@material-ui/core';
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);

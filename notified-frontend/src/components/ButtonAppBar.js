@@ -1,19 +1,11 @@
-import React, { useState, useEffect } from "react";
-
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import Grid from '@material-ui/core/Grid';
-
-
+import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
-
 import Sidebar from "./Sidebar";
-
 
 const useStyles = makeStyles((theme) => ({
 
@@ -93,32 +85,13 @@ function ButtonAppBar() {
                         Notified
                     </Typography>
 
-                    <Button color="black">
-                        Login
+                    <Button color="inherit">
+                        Sign Up
                     </Button>
 
-
-
-                    <Grid
-                        justify="space-between" // Add it here :)
-                        container
-                        spacing={24}
-                    >
-                        <Grid item>
-                            <Typography type="title" color="inherit">
-                                Title
-                            </Typography>
-                        </Grid>
-
-                        <Grid item>
-                            <div>
-                                {/* <HeartIcon /> */}
-                                <Button raised color="accent">
-                                    Login
-                                </Button>
-                            </div>
-                        </Grid>
-                    </Grid>
+                    <Button color="inherit">
+                        Log In
+                    </Button>
                 </Toolbar>
 
             </AppBar>
