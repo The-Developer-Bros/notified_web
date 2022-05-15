@@ -28,5 +28,6 @@ code {
 } */
 
 body {
-  background: linear-gradient(to left top, blue, red) fixed;
+  /* background: linear-gradient(to left top, blue, red) fixed; */
+  background-color: white;
 }

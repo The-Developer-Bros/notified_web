@@ -10,7 +10,7 @@ function Home() {
 
     // Handle window resize
     const handleResize = () => {
-        setWindowHeight(window.innerHeight)
+        setWindowHeight(window.innerHeight * 0.8)
     }
 
     // Add event listener
@@ -56,11 +56,11 @@ function Home() {
                 </button>
             </div>
 
-            <div class="flex-container" align="center">
+            {/* <div class="flex-container" align="center">
                 <span>1</span>
                 <span>2</span>
                 <span>3</span>
-            </div>
+            </div> */}
 
             <br />
             <br />

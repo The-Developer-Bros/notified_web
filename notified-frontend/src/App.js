@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
 import './App.css';
-import ButtonAppBar from "./components/ButtonAppBar";
+import Navbar from "./components/Navbar";
 import SocialMediaSideBar from './components/SocialMediaSideBar';
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
@@ -24,7 +24,7 @@ function App() {
       <Router>
 
         <SocialMediaSideBar />
-        <ButtonAppBar />
+        <Navbar />
 
         {/* Header */}
         <Routes>
